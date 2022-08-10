@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>“和我一起看太阳熄灭的瞬间”</title>
+    <link rel="shortcut icon" href="logo.png">
+    <style>
+    body{
+      background-image: url("bg.jpg");
+      background-repeat: repeat;
+      background-color: black;
+      background-attachment: fixed;
+    }
+
+    /* bg */
+    #bg1{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      opacity: 1;
+      z-index: 1;
+    }
+    #pink{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width:150%;
+      opacity: 0.3;
+      z-index: 2;
+    }
+    #stars{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars2{
+      position: fixed;
+      top: 0vh;
+      left: 43vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars3{
+      position: fixed;
+      top: 0vh;
+      left: 86vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars4{
+      position: fixed;
+      top: 80vh;
+      left: 0vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars5{
+      position: fixed;
+      top: 80vh;
+      left: 43vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars6{
+      position: fixed;
+      top: 0vh;
+      left: 86vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+
+    /* atoms */
+    #atomkevin1{
+      position: fixed;
+      z-index: 6;
+      animation: kevinmove 3s infinite;
+      animation-direction: alternate;
+    }
+      @keyframes kevinmove {
+        from   {width:4%; left:50vw; top:63vh;}
+        to   {width:7%; left:49vw; top:62vh;}
+      }
+
+    #atomshan1{
+      position: fixed;
+      z-index: 6;
+      animation: shanmove 3s infinite;
+      animation-direction: alternate;
+    }
+      @keyframes shanmove {
+        from   {width:5%; left:23vw; top: 21vh;}
+        to   {width: 8%; left:22vw; top: 20vh;}
+      }
+
+    #atomshanbg{
+      position: fixed;
+      left: -8vw;
+      top: -30vh;
+      width: 55;
+      z-index: 5;
+      animation: bgmove 10s;
+      animation-fill-mode: forwards;
+    }
+    #atomkevinbg{
+      position: fixed;
+      right: -8vw;
+      bottom: -40vh;
+      width: 55;
+      z-index: 5;
+      animation: bgmove 10s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes bgmove {
+    from   {opacity: 0;}
+    to   {opacity: 0.3;}
+  }
+    #hishan{
+      position: fixed;
+      left: 31vw;
+      top: 12vh;
+      width: 10%;
+      z-index: 6;
+      cursor: pointer;
+    }
+    #hishan:hover{
+      left: 30.85vw;
+      top: 11.85vh;
+      width: 10.3%;
+    }
+    #hikevin{
+      position: fixed;
+      left: 57vw;
+      top: 54vh;
+      width: 10%;
+      z-index: 6;
+      cursor: pointer;
+    }
+    #hikevin:hover{
+      left: 56.85vw;
+      top: 53.85vh;
+      width: 10.3%;
+    }
+
+    #mountain{
+      position: fixed;
+      left: 40vw;
+      top: 30vh;
+      width: 20%;
+      z-index: 11;
+      display:none;
+    }
+    #sea{
+      position: fixed;
+      left: 40vw;
+      top: 30vh;
+      width: 20%;
+      z-index: 11;
+      display:none;
+    }
+    #road{
+      position: fixed;
+      left: 40vw;
+      top: 30vh;
+      width: 20%;
+      z-index: 11;
+      display:none;
+    }
+    #star{
+      position: fixed;
+      left: 40vw;
+      top: 30vh;
+      width: 20%;
+      z-index: 11;
+      display:none;
+    }
+
+    #shanmonologue{
+      position: fixed;
+      top: 10vh;
+      left: 45vw;
+      width: 48%;
+      height: 30%;
+      overflow-y: scroll;
+      z-index: 10;
+      font-size: 16px;
+      color: white;
+      background-color: black;
+      border: 3px green dotted;
+      border-radius: 12px;
+      padding: 15px;
+      display: none;
+    }
+    #kevinmonologue{
+      position: fixed;
+      top: 55vh;
+      left: 5.3vw;
+      width: 38%;
+      height: 30%;
+      overflow-y: scroll;
+      z-index: 10;
+      font-size: 16px;
+      color: white;
+      background-color: black;
+      border: 3px blue dashed;
+      border-radius: 12px;
+      padding: 15px;
+      display: none;
+    }
+    #mountaintext{
+      font-size: 16px;
+      font-style: italic;
+      font-weight: bold;
+      cursor:help;
+      color: #4f62ee;
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+      display:inline !important;
+    }
+    #seatext{
+      font-size: 16px;
+      font-style: italic;
+      font-weight: bold;
+      cursor:help;
+      color: #4f62ee;
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+      display:inline !important;
+    }
+    #roadtext{
+      font-size: 16px;
+      font-style: italic;
+      font-weight: bold;
+      cursor:help;
+      color: green;
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+      display:inline !important;
+    }
+    #startext{
+      font-size: 16px;
+      font-style: italic;
+      font-weight: bold;
+      cursor:help;
+      color:green;
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+      display:inline !important;
+    }
+    #atombg{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 4;
+      animation: cbgmove 10s;
+      animation-fill-mode: forwards;
+    }
+      @keyframes cbgmove {
+      from   {opacity: 0;}
+      to   {opacity: 1;}
+    }
+
+
+
+    /* hand */
+    #hand{
+      position: fixed;
+      top: 2vh;
+      left: 1vw;
+      width: 4%;
+      z-index:10;
+      cursor: pointer;
+    }
+    #hand:hover{
+      top: 1.85vh;
+      left: 0.85vw;
+      width: 4.3%;
+      cursor: pointer;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="6atom.js"></script>
+  </head>
+  <body>
+    <!-- bg -->
+    <img id=pink img src=pink.jpg>
+    <img id=bg1 img src=bg1.jpg>
+    <img id=stars img src=stars.gif>
+    <img id=stars2 img src=stars.gif>
+    <img id=stars3 img src=stars.gif>
+    <img id=stars4 img src=stars.gif>
+    <img id=stars5 img src=stars.gif>
+    <img id=stars6 img src=stars.gif>
+
+    <!-- atoms -->
+    <img id=atomkevin1 img src=6/atomkevin.png>
+    <img id=atomshan1 img src=6/atomshan.png>
+    <img id=atomkevinbg img src=6/atomkevin.png>
+    <img id=atomshanbg img src=6/atomshan.png>
+    <img id=hishan img src=6/hishan.png>
+    <img id=hikevin img src=6/hikevin.png>
+    <img id=mountain img src=6/mountain.png>
+    <img id=sea img src=6/sea.png>
+    <img id=road img src=6/road.png>
+    <img id=star img src=6/star.png>
+    <img id=atombg img src=6/cyberspace.png>
+
+    <div id=shanmonologue>
+      我遇见他大概是三亿年以前吧，时间有点久，具体的记不清楚了，但是就有一天他突然出现在我旁边，有一股力量吸引着我，牢牢地把我抓住。然后我们就被绑在一起了。在那之前我也和很多其他的原子绑在一起过，但，你知道的，身边的原子一直在变嘛。所以那时候我以为我跟他也就是短暂地绑在一起一下，暂时做一块石头。<br><br>
+      起初刚认识的时候他蛮害羞的，他每天在那里转啊转啊，我也每天在那里转啊转啊，但他都不跟我讲话。做一块石头很多时候其实蛮无聊的，也不会动，就呆在原地。所以有一天我就和他搭话，我问他，你今天好吗？<br><br>
+      他说，就和平常一样吧。不知道为什么，他说这句话的时候显得特别的可爱。后来我们就开始聊天，然后我们就相爱了，其实是一个很普通的故事。<br><br>
+      不可思议的是我和他在这三亿年里从来没有分开过。我刚才说了，做一个原子，身边的其他原子总是来来去去的，但他把我抓得特别紧，就好像，好像天生我们就是一体的，分不开的。我们去过<span id=mountaintext>最高的山顶</span>，也去过<span id=seatext>最深的海底</span>，山顶有很大的风，海底有很大的浪，但我们都还是绑在一起。<br><br>
+      两千年前我们决定结婚，很难想象我们在一起的三亿年里，都没有想到过这件事，而人类在短短几千年里就把它发明出来。我们两个原子很难有什么仪式性的东西，所以他问我，你愿意永远和我在一起吗？我说愿意。我又问他，那你愿意永远和我在一起吗？他说我也愿意。这样我们就结婚了。<br><br>
+      怎么让爱情的保质期像永远那么长？这个问题有点难住我了，不过我觉得对人类来说，“永远”这个词是一个程度形容词吧，人类的一生那么短暂，只要在当下足够爱，那就是永远了。<br><br>
+      对我们来说，我想只要他继续紧紧抓着我，我们就可以相爱直到永远。三亿年很长吗？我的身体如此渺小，灵魂却很大，以至于三亿年对我来说也只不过是和他在一起的一瞬间。
+    </div>
+
+    <div id=kevinmonologue>
+      在遇到她之前我是另一块石头里的一个原子，可以说我已经习惯了做一块石头，习惯到厌倦了。我就一直旋转，然后一直在想，这样永无止尽的旋转，到底是为了什么？越想，就越想不明白。我开始觉得做一个原子是一件毫无意义的事情。我的身体里开始有一种难以名状的感觉，仿佛是毁灭性的，但又悄无声息。很久以后我知道了，那是死的意愿，但这让整件事感觉更虚无了。<br><br>
+      有一天在我浑浑噩噩的时候，忽然间感觉到一股强大的吸力，把我和她吸到一起去了，等到回过神来我发现我从一块石头变成了另一块石头。我想这就是我平庸的、没有尽头的一生了。<br><br>
+      然后她和我说话，问我今天好吗？我说，就和平常一样吧。<br><br>
+      那之后我们开始聊天，我从来没遇见过像她那样的原子，我猜她过去曾经是云、是雨、是巨大的海洋，只有这些存在能赋予她如此原始的生命力。我开始爱上和她聊天。我开始爱上她。和她一起，我们作为一块石头，就好像是世界上最了不起的事。<br><br>
+      在我们去过的地方里，我最喜欢一座山的<span id=roadtext>半山腰</span>，白天有潮湿的薄雾，夜里有不知名的鸟鸣。我和她一起<span id=startext>数星星</span>，她问我，你猜是天上的星星比较多，还是我们会在一起的时间比较多？<br><br>
+      我说，如果我们不滚下山的话，星星总能数完的，但我们在一起的时间是数不完的。她听了很开心，不过每晚我们总是忘记数到了哪一颗，不得不从头开始，于是直到我们滚下山，也没有数完所有的星星。<br><br>
+      她很肯定我们会在一起直到永远。我听人类说，世界是会毁灭的，我想世界毁灭意味着我们也不复存在了。但对我来说这不是一件值得恐惧的事情，无限并不总是比有限迷人。我们已经看过这世界上最壮丽的风景，如果有可能的话，我也想和她一起看一看，太阳熄灭的那一刻。
+    </div>
+
+    <!-- hand -->
+    <a href=index.html><img id=hand img src=hand.png></a>
+  </body>
+</html>

@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>一颗盐，要如何爱一个女人？</title>
+    <link rel="shortcut icon" href="logo.png">
+    <style>
+    body{
+      background-image: url("bg.jpg");
+      background-repeat: repeat;
+      background-color: black;
+      background-attachment: fixed;
+    }
+
+    /* bg */
+    #bg1{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      opacity: 1;
+      z-index: 1;
+    }
+    #pink{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width:150%;
+      opacity: 0.3;
+      z-index: 2;
+    }
+    #stars{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars2{
+      position: fixed;
+      top: 0vh;
+      left: 43vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars3{
+      position: fixed;
+      top: 0vh;
+      left: 86vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars4{
+      position: fixed;
+      top: 80vh;
+      left: 0vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars5{
+      position: fixed;
+      top: 80vh;
+      left: 43vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars6{
+      position: fixed;
+      top: 0vh;
+      left: 86vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+
+    /* actual content */
+    #housewife1{
+      position: fixed;
+      left: 9vw;
+      z-index: 5;
+      width: 8%;
+      animation: wifemove 2s infinite;
+      animation-direction: alternate;
+    }
+      @keyframes wifemove {
+      from   {top: 16vh;}
+      to   {top: 18vh;}
+    }
+    #salt1{
+      position: fixed;
+      left: 38vw;
+      z-index: 5;
+      width: 6%;
+      animation: saltmove 2s infinite;
+      animation-direction: alternate;
+    }
+      @keyframes saltmove {
+      from   {top: 80vh;}
+      to   {top: 82vh;}
+    }
+
+    #wifename{
+      position: fixed;
+      top: 25vh;
+      left: 17vw;
+      z-index: 6;
+      font-size: 30px;
+      font-style:italic;
+      color: pink;
+      text-shadow: 3px 3px 3px red;
+      background-color: white;
+      border: 5px dotted pink;
+      border-radius: 12px;
+      padding-left: 10px;
+      padding-right: 10px;
+      cursor: pointer;
+    }
+    #wifename:hover{
+      font-size: 42px;
+      color: white;
+      text-shadow: 5px 5px 3px pink;
+      background-color: transparent;
+      border: none;
+    }
+    #wifeintro{
+      position: fixed;
+      top: 35vh;
+      left: 15vw;
+      z-index: 6;
+      width: 28%;
+      font-size: 16px;
+      color: black;
+      text-shadow: 2px 2px 1px white;
+      background-color: rgba(255,255,255,0.5);
+      padding:10px;
+      cursor: move;
+      display:none;
+    }
+    #monologue{
+      font-style: italic;
+      display:none;
+      font-weight: bold;
+    }
+    #hwbg{
+      position: fixed;
+      top: 10vh;
+      left: 16vw;
+      z-index: 5;
+      width: 28%;
+      opacity:75%;
+      display:none;
+    }
+    #saltname{
+      position: fixed;
+      top: 86vh;
+      left: 46vw;
+      z-index: 6;
+      font-size: 24px;
+      font-style:italic;
+      color: white;
+      text-shadow: 3px 3px 3px red;
+      background-color: pink;
+      border: 5px dotted white;
+      border-radius: 12px;
+      padding-left: 10px;
+      padding-right: 10px;
+      cursor: pointer;
+    }
+    #saltname:hover{
+      font-size: 35px;
+      color: white;
+      text-shadow: 5px 5px 3px pink;
+      background-color: transparent;
+      border: none;
+    }
+    #saltintro{
+      position: fixed;
+      top: 60vh;
+      left: 54vw;
+      z-index: 6;
+      width: 28%;
+      font-size: 16px;
+      color: black;
+      text-shadow: 2px 2px 1px white;
+      background-color: rgba(255,255,255,0.5);
+      padding:10px;
+      cursor: move;
+      display:none;
+    }
+    #price{
+      font-size: 25px;
+      font-style: italic;
+      color: red;
+      font-weight: 800;
+      text-shadow:3px 3px white;
+      display:none;
+    }
+    #salt2{
+      position: fixed;
+      top: 50vh;
+      left: 43vw;
+      z-index: 5;
+      width: 22%;
+      opacity:75%;
+      display:none;
+    }
+    #kitchen{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 4;
+      animation: cbgmove 10s;
+      animation-fill-mode: forwards;
+    }
+      @keyframes cbgmove {
+      from   {opacity: 0;}
+      to   {opacity: 1;}
+    }
+    #story{
+      position: fixed;
+      top: 9vh;
+      left: 50vw;
+      z-index: 6;
+      width: 44%;
+      font-size: 16px;
+      color: white;
+      text-shadow: 2px 2px 1px black;
+      height: 40%;
+      overflow-y: scroll;
+      display:none;
+    }
+    #head{
+      position: fixed;
+      top: 9vh;
+      left: 50vw;
+      z-index: 6;
+      width: 44%;
+      font-size: 16px;
+      color: white;
+      text-shadow: 2px 2px 1px black;
+      cursor:help;
+      animation: cbgmove 10s;
+      animation-fill-mode: forwards;
+    }
+      @keyframes cbgmove {
+      from   {opacity: 0;}
+      to   {opacity: 1;}
+    }
+
+    /* hand */
+    #hand{
+      position: fixed;
+      top: 2vh;
+      left: 1vw;
+      width: 4%;
+      z-index:10;
+      cursor: pointer;
+    }
+    #hand:hover{
+      top: 1.85vh;
+      left: 0.85vw;
+      width: 4.3%;
+      cursor: pointer;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="2wife.js"></script>
+  </head>
+  <body>
+    <!-- bg -->
+    <img id=pink img src=pink.jpg>
+    <img id=bg1 img src=bg1.jpg>
+    <img id=stars img src=stars.gif>
+    <img id=stars2 img src=stars.gif>
+    <img id=stars3 img src=stars.gif>
+    <img id=stars4 img src=stars.gif>
+    <img id=stars5 img src=stars.gif>
+    <img id=stars6 img src=stars.gif>
+
+    <!-- housewife and salt -->
+    <img id=housewife1 img src=2/housewife.png>
+    <img id=salt1 img src=2/salt.png>
+    <img id=salt2 img src=2/salt.png>
+    <img id=hwbg img src=2/hwbg.png>
+    <img id=kitchen img src=2/kitchen.jpg>
+
+
+    <div id=wifename>寂❤寞 娇.～妻</div>
+    <div id=wifeintro>
+      · 31岁（正是女人如葡萄般饱满熟透的年龄）<br>
+      · 四年前与相差十岁的总裁男友步入婚姻殿堂<br>
+      · 却发现丈夫秃顶<br><br>
+       <span id=monologue>“这偌大的房间里，弥漫的全是寂寞的味道——那么刺鼻！那么窒息！抬眼处金碧的反光扎进我的心里，那讽刺的尖刃，将我的青春划破，将我的自由挟去。镜子里的我看着自己，只看到一具熟润欲滴的躯体，却无人欣赏，难道要等它皱了、烂了、凋零了吗？多想要一双孔武有力的手臂抚摸着它，一双湛蓝如海的眼睛注视着它，让它重焕光彩......</span>”
+    </div>
+    <div id=saltname>【$89.99折扣立抢】喜马拉雅山盐</div>
+    <div id=saltintro>
+      ·厨房里的明星产品！<br>
+      · 地中海海盐的绝对竞品<br>
+      · 来自遥远的喜马拉雅山顶，人工制成的顶级盐料，每一粒都有自己独特的滋味！满口飘香的咸味中带着喜马拉雅山顶云雾缭绕的清冽口感在唇齿中弥散，仿佛置身远离尘世的山野之间，为您带来极致的美味体验～<br>
+      · <span id=price>折扣价$89.99火爆开售!!!</span>
+    </div>
+    <div id=head>
+        她与它相遇，是在一个礼拜五。
+    </div>
+    <div id=story>
+        她与它相遇，是在一个礼拜五。<br><br>
+
+        下午五点十二分零八秒，太阳触碰到地平线的瞬间，她的指尖触碰到它的外壳。有点冷。超市的货架上一共有四十四瓶折扣价喜马拉雅山盐，而她正好挑中它。或许这之后的故事早在这一刻就已经确定了，就像它打折的标签，这场爱情也注定了折扣。<br><br>
+
+        她指尖轻捻着它，优雅得像在雨后昏黄色水光的巷口点一根烟，或者像在真丝被单和真丝睡衣的夹缝抚过柔软的腰际。就在这一秒，它已经为她沉沦。<br><br>
+
+        一粒盐要如何爱一个女人？它不知道。它只知道，她喜欢用置物柜第三层的蓝色高脚杯喝红酒，烤蛋糕的时候听小野洋子的音乐，出门前会从左数第二个玻璃罐里拿两颗糖，放在皮包的夹层。<br><br>
+
+        它还知道，她的丈夫很少回家。她右手无名指上那颗钻石成了她丈夫唯一的在场证明。夜深的时候，在她温软肌肤与寂寞双眼游走的一纸在场证明，又为这一夜添上一点禁忌的花纹。<br><br>
+
+        一个半月，对一个普通人来说，只是转眼一瞬间。对一个寂寞多情的女人来说，时间就显得迟缓一些。而对于一粒盐来说，一个半月，就是一辈子。它可以坚定地告诉这个世界，它已经爱了她整整一辈子，等了她整整一辈子。<br><br>
+
+        它等待着被她物尽其用的一刻，想象中以自己赤诚的身躯触碰她的指腹，她灵巧的手指来回磨蹭，它置身云端，随即失重，跌入浓稠的气味里粉身碎骨。最后，她将它纳入口中，轻轻地，咽下去。这就是它能想象最好的一辈子。<br><br>
+
+        终于在一个与他们相遇那天很像的礼拜五的傍晚五点，想象变成了现实。<br><br>
+
+        它感受着，用它所有不存在的皮肤和肌肉和神经和骨骼感受着，比想象一万遍所能想到更好的感受着。它不再是一粒盐，而是一个恋人、一段美梦。它被装盘，端上桌子，她的手握着银勺将它舀起，几乎满溢的一勺。<br><br>
+
+        然后，一双手从她背后伸出来。<br><br>
+
+        一双多毛，粗糙，男人的手。<br><br>
+
+        那双手将它的美梦戳破了。那双手环抱着她，将银勺接过来，送入了自己口中。<br><br>
+
+        “宝贝，你做的饭真好吃。”<br><br>
+
+        这是它这短暂的一生结束前，听到的最后一句话。
+    </div>
+
+
+    <!-- hand -->
+    <a href=index.html><img id=hand img src=hand.png></a>
+  </body>
+</html>

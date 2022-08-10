@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>虫人的诞生</title>
+    <link rel="shortcut icon" href="logo.png">
+    <style>
+    body{
+      background-image: url("bg.jpg");
+      background-repeat: repeat;
+      background-color: black;
+      background-attachment: fixed;
+    }
+    #bg1{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      opacity: 1;
+      z-index: 1;
+    }
+    #pink{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width:150%;
+      opacity: 0.3;
+      z-index: 2;
+    }
+    #space{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 4;
+      animation: cbgmove 10s;
+      animation-fill-mode: forwards;
+    }
+      @keyframes cbgmove {
+      from   {opacity: 0;}
+      to   {opacity: 1;}
+    }
+    #stars{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars2{
+      position: fixed;
+      top: 0vh;
+      left: 43vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars3{
+      position: fixed;
+      top: 0vh;
+      left: 86vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars4{
+      position: fixed;
+      top: 80vh;
+      left: 0vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars5{
+      position: fixed;
+      top: 80vh;
+      left: 43vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars6{
+      position: fixed;
+      top: 0vh;
+      left: 86vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #caphover{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 5;
+      display:none;
+    }
+    #bug{
+      position: fixed;
+      z-index: 6;
+      left: 25vw;
+      top: 43vh;
+      width: 13%;
+      animation: bugmove 2s infinite;
+      animation-direction: alternate;
+    }
+      @keyframes bugmove {
+      from   {top: 43vh;}
+      to   {top: 45vh;}
+    }
+    #captain{
+      position: fixed;
+      left: 52vw;
+      z-index: 6;
+      width: 10%;
+      animation: capmove 2s infinite;
+      animation-direction: alternate;
+    }
+      @keyframes capmove {
+      from   {top: 25vh;}
+      to   {top: 27vh;}
+    }
+    #capname{
+      position: fixed;
+      top: 25vh;
+      left: 62vw;
+      z-index: 6;
+      width: 370px;
+      font-size: 23px;
+      color: orange;
+      background-color:blue;
+      text-shadow: 2px 2px 1px white;
+      text-decoration: underline overline;
+      text-indent: 10px;
+      cursor: pointer;
+    }
+    #capintro{
+      position: fixed;
+      top: 30vh;
+      left: 65vw;
+      z-index: 6;
+      width: 28%;
+      font-size: 16px;
+      color: black;
+      text-shadow: 2px 2px 1px white;
+      border: 6px dotted orange;
+      cursor: move;
+      display:none;
+    }
+    #spyname{
+      position: fixed;
+      top: 47vh;
+      left: 7vw;
+      z-index: 6;
+      width: 290px;
+      font-size: 23px;
+      color: orange;
+      background-color:black;
+      text-shadow: 2px 2px 1px blue;
+      text-decoration: underline overline;
+      text-indent: 13px;
+      cursor: pointer;
+    }
+    #spyintro{
+      position: fixed;
+      top: 54vh;
+      left: 10vw;
+      z-index: 6;
+      width: 28%;
+      font-size: 16px;
+      color: black;
+      text-shadow: 2px 2px 1px white;
+      border: 4px dotted blue;
+      cursor: move;
+      display:none;
+    }
+    #human{
+      font-size: 25px;
+      display:inline !important;
+    }
+    #saturn{
+      font-size: 40px;
+      writing-mode: vertical-rl;
+      display:inline !important;
+    }
+    #missionlog{
+      position: fixed;
+      top: 60vh;
+      left: 56vw;
+      z-index: 10;
+      font-size: 20px;
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    #missionloglong{
+      position: absolute;
+      top: 60vh;
+      left: 47vw;
+      width: 37%;
+      z-index: 10;
+      font-size: 16px;
+      color: white;
+      background-color: black;
+      border: 0.2vw blue dashed;
+      display:none;
+    }
+    #hand{
+      position: fixed;
+      top: 2vh;
+      left: 1vw;
+      width: 4%;
+      z-index:10;
+      cursor: pointer;
+    }
+    #hand:hover{
+      top: 1.85vh;
+      left: 0.85vw;
+      width: 4.3%;
+      cursor: pointer;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="1space.js"></script>
+  </head>
+  <body>
+    <img id=pink img src=pink.jpg>
+    <img id=bg1 img src=bg1.jpg>
+    <img id=space img src=1/space.jpg>
+    <img id=stars img src=stars.gif>
+    <img id=stars2 img src=stars.gif>
+    <img id=stars3 img src=stars.gif>
+    <img id=stars4 img src=stars.gif>
+    <img id=stars5 img src=stars.gif>
+    <img id=stars6 img src=stars.gif>
+    <img id=bug img src=1/bug.png>
+    <img id=captain img src=1/captain.png>
+    <div id=capname>“土星队长”亚历山大·强森·罗杰斯</div>
+    <div id=capintro>
+      · 种族：人类（后改造为赛博格）<br>
+      · 年龄：二十五岁<br>
+      · 身体数据：身高188cm，胸围120.3cm，腰围71.4cm，臀围124cm<br>
+      · 职业：土星队长<br>
+      · 任务：带领人类移居土星，保护人类免受外星物种侵害<br>
+    </div>
+    <div id=spyname>“霜之哀伤战士”安祺拉</div>
+    <div id=spyintro>
+      · 种族：虫族<br>
+      · 年龄：不详<br>
+      · 身体数据：不详<br>
+      · 职业：特工<br>
+      · 任务：魅惑土星队长，<span id=human>消灭人类</span>，<span id=saturn>占领土星</span><br>
+      </div>
+    <img id=caphover img src=1/caphover.jpg>
+    <div id=missionlog>点击阅读任务日志no.384</div>
+    <div id=missionloglong>
+      <br><br>执行土星任务的第三百八十四天——第一年零十九天。今天，我决定放弃任务。<br><br>
+      八年前，土星基地从三万名候选者中选中了我，成为土星队长。地球即将毁灭，人类面临着灭绝的危机，移民土星成为了这一种族生存下去的唯一机会；而我，土星队长，肩负着保存人类火种，保护移民者不受外星生物伤害的伟大职责。<br><br>
+      长达七年的训练中，长官们不断提醒我，土星队长这一头衔有多么沉重。对人类的忠诚成为了我唯一需要铭记的碑文。亚历山大·强森·罗杰斯，这一凡人的名字在我被选中的那一刻起，已经不具有任何意义。我的过去、我的未来、我的家人、我的朋友......一切都不复存在。我为保护人类而生，在将来的某一天也将为保护人类而死。<br><br>
+      他们相信我可以做到的，因为我是从三万名候选者中被选中的，完美的男人。我即勇敢、我即公正、我即无私。<br><br>
+      曾经，我也是这样相信的。<br><br>
+      然后某一天，基地通知我启航，我就这样告别了行将就木的地球——我曾经的母星——去向了土星。一切都很好，飞船安全降落，第一批移民者有序扎营，开始建筑人类的新秩序。<br><br>
+      然后再某一天，她出现了。<br><br>
+      她的名字叫安祺拉。后来我知道，其他宇宙种族称她为“霜之哀伤战士”，就像人们称我为“土星队长”。但我叫她安祺拉。或许整个宇宙里，只有我一个人这么叫。<br><br>
+      她叫我亚历山大。<br><br>
+      我不知道她从哪里来，年纪多大，有什么样的过去，或许这一切就和我的一切一样被抹去了。我只知道我无可救药地爱上她。在她面前，我重新成为亚历山大·强森·罗杰斯。这感觉竟是那么好。那么好。她睡在我身边。虫族没有体温，也没有心跳，但我感受到她胸膛的起伏，温热的身体灼烫着我的身体。<br><br>
+      今天，我决定放弃任务，因为她告诉我，她有了我们的孩子。<br><br>
+      我想象着那个小小的虫人，宇宙里的第一个虫人，就像宇宙大爆炸创造出这一整个世界，我和她也创造出一个史无前例的新生命。我想象着小小的虫人慢慢长大。我想象着我们孕育出好多好多小小的虫人，直到它们将这个荒芜的星球变得生机盎然。<br><br>
+      我知道她也和我一样，这样想象着。她的眼睛告诉了我。<br><br>
+      她的眼睛还告诉我，她以为我被她魅惑了。这样一个傻得可爱的女人。不过这样说也没错，我被她魅惑了，但那仅仅因为她是她，而她如此这般的美丽。<br><br>
+      这样一个美丽的女人，同样也爱上了我。<br><br>
+      只因我是这个世界上唯一的，完美的男人。
+      </div>
+      <a href=index.html><img id=hand img src=hand.png></a>
+  </body>
+</html>

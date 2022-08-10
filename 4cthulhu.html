@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>。孕育。献祭。结合。</title>
+    <link rel="shortcut icon" href="logo.png">
+    <style>
+    body{
+      background-image: url("bg.jpg");
+      background-repeat: repeat;
+      background-color: black;
+      background-attachment: fixed;
+    }
+
+    /* bg */
+    #bg1{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      opacity: 1;
+      z-index: 1;
+    }
+    #pink{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width:150%;
+      opacity: 0.3;
+      z-index: 2;
+    }
+    #stars{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars2{
+      position: fixed;
+      top: 0vh;
+      left: 43vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars3{
+      position: fixed;
+      top: 0vh;
+      left: 86vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars4{
+      position: fixed;
+      top: 80vh;
+      left: 0vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars5{
+      position: fixed;
+      top: 80vh;
+      left: 43vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars6{
+      position: fixed;
+      top: 0vh;
+      left: 86vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+
+    /* metro and prayer */
+    #metro{
+      position: fixed;
+      bottom: 0vh;
+      right: 0vw;
+      z-index: 5;
+      width: 40%;
+    }
+    #prayer{
+      position: fixed;
+      top: 65vh;
+      left: 16vw;
+      z-index: 5;
+      width: 8%;
+      animation: prayermove 25s;
+      animation-fill-mode: forwards;
+    }
+      @keyframes prayermove {
+      from   {top: 65vh; left:16vw; width:8%;}
+      to   {top: 9vh; left:2vw; width:38%}
+    }
+
+    #cthulhubg{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 4;
+      animation: cbgmove 25s;
+      animation-fill-mode: forwards;
+    }
+      @keyframes cbgmove {
+      from   {opacity: 0;}
+      to   {opacity: 1;}
+    }
+
+    #history{
+      position: fixed;
+      top: 24vh;
+      left: 30vw;
+      width: 40%;
+      z-index: 10;
+      font-size: 16px;
+      color: white;
+      text-shadow: 2px 2px black;
+      text-align: center;animation: cbgmove 25s;
+      animation-fill-mode: forwards;
+    }
+    #mom{
+      position: fixed;
+      top: 30vh;
+      right: 5vw;
+      z-index: 10;
+      font-size: 30px;
+      color: purple;
+      text-shadow: 2px 2px white;
+      writing-mode: vertical-rl;
+      font-style:italic;
+      font-weight: bold;
+      display:none;
+    }
+    #kev{
+      position: fixed;
+      top: 35vh;
+      left: 5vw;
+      z-index: 10;
+      font-size: 30px;
+      color: purple;
+      text-shadow: 2px 2px white;
+      writing-mode: vertical-rl;
+      font-style:italic;
+      font-weight: bold;
+      display:none;
+    }
+
+
+
+    /* hand */
+    #hand{
+      position: fixed;
+      top: 2vh;
+      left: 1vw;
+      width: 4%;
+      z-index:10;
+      cursor: pointer;
+    }
+    #hand:hover{
+      top: 1.85vh;
+      left: 0.85vw;
+      width: 4.3%;
+      cursor: pointer;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="4cthulhu.js"></script>
+  </head>
+  <body>
+    <!-- bg -->
+    <img id=pink img src=pink.jpg>
+    <img id=bg1 img src=bg1.jpg>
+    <img id=stars img src=stars.gif>
+    <img id=stars2 img src=stars.gif>
+    <img id=stars3 img src=stars.gif>
+    <img id=stars4 img src=stars.gif>
+    <img id=stars5 img src=stars.gif>
+    <img id=stars6 img src=stars.gif>
+
+    <!-- atoms -->
+    <img id=metro img src=4/metro.png>
+    <img id=prayer img src=4/prayer.png>
+    <img id=cthulhubg img src=4/cthulhubg.jpg>
+    <div id=history>
+      「三千万年前，圣山之母以天地之精气造万物，是以世间有了生命。」<br><br>
+
+      「圣山之母本无名，子民们为供奉瞻仰，称其为“梅特罗”，乃母亲之意。子民自称“祈徒”，世代忠于梅特罗母亲，祈愿母亲之灵气令种族繁衍、昌盛。梅特罗母亲将经络扎根于地表之下，为万物之灵提供养分；圣躯以蜕皮为周期标识时间之流逝，一周期为一梅特罗年。」<br><br>
+
+      「每一梅特罗年，祈徒中选出一位“祈使”自愿献祭，与梅特罗血肉交融。祈徒孕育自梅特罗之身，并无生育能力，而祈使与梅特罗之结合便是这一种族血脉延续之法。此法已延续了三千〇一十九万二千〇四十六梅特罗年，祈徒一族受母亲滋养庇护，年轻祈徒以成为祈使为最大志向，也有祈徒一生为此努力，直到衰老、死亡。在此期间，从未有过差池。」<br><br>
+
+      「直到第三千〇一十九万二千〇四十七梅特罗年，即如今“元合纪年法”之元年，梅特罗母亲将部族选中的祈使杀死后，亲自选中了年轻病弱的祈徒凯文，将一半根茎插入凯文体内，造出万物之父，仍以凯文命名。此后，梅特罗与凯文所繁育之子嗣有了生育能力，祈使一职逐渐退出了历史舞台，只在史书与艺术作品中传颂。」<br><br>
+
+      「有关梅特罗与凯文之结合，学界众说纷纭，始终未曾得出确切结论。史书中有关祈徒凯文之记载，通常仅寥寥数笔，讲述其幼时身体孱弱，性格内向，尽管与所有其他年轻祈徒一样向往与梅特罗之结合，但并非祈使之材。祈徒凯文或有异于常人者，今已无从得知。」<br><br><br><br><br>
+
+      ——元合二〇二二年 八月 梅特罗史学研究院 联合编著
+    </div>
+    <div id=mom>「圣山之母·梅特罗」</div>
+    <div id=kev>「祈徒·凯文」</div>
+
+    <!-- hand -->
+    <a href=index.html><img id=hand img src=hand.png></a>
+  </body>
+</html>

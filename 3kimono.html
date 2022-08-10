@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>我 即美之化身</title>
+    <link rel="shortcut icon" href="logo.png">
+    <style>
+    body{
+      background-image: url("bg.jpg");
+      background-repeat: repeat;
+      background-color: black;
+      background-attachment: fixed;
+    }
+
+    /* bg */
+    #bg1{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      opacity: 1;
+      z-index: 1;
+    }
+    #pink{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width:150%;
+      opacity: 0.3;
+      z-index: 2;
+    }
+    #stars{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars2{
+      position: fixed;
+      top: 0vh;
+      left: 43vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars3{
+      position: fixed;
+      top: 0vh;
+      left: 86vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars4{
+      position: fixed;
+      top: 80vh;
+      left: 0vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars5{
+      position: fixed;
+      top: 80vh;
+      left: 43vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+    #stars6{
+      position: fixed;
+      top: 0vh;
+      left: 86vw;
+      width:43%;
+      opacity: 0.7;
+      z-index: 3;
+    }
+
+    /* kimono */
+    #kimono1{
+      position: fixed;
+      top: 7vh;
+      left: 40vw;
+      z-index: 5;
+      width: 8%;
+    }
+    #mirrorblank{
+      position: fixed;
+      top: 4vh;
+      right: 38vw;
+      z-index: 5;
+      width: 10%;
+      cursor: pointer;
+    }
+    #mirrorblank1{
+      position: fixed;
+      top: 4vh;
+      right: 38vw;
+      z-index: 5;
+      width: 10%;
+      display:none;
+    }
+    #mirrorfull{
+      position: fixed;
+      top: 4vh;
+      right: 38vw;
+      z-index: 5;
+      width: 10%;
+      display:none;
+    }
+    #kimonobg{
+      position: fixed;
+      top: 0vh;
+      left: 0vw;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 4;
+      animation: cbgmove 10s;
+      animation-fill-mode: forwards;
+    }
+      @keyframes cbgmove {
+      from   {opacity: 0;}
+      to   {opacity: 1;}
+    }
+
+    #kimonologue{
+      position: fixed;
+      top: 55vh;
+      left: 15vw;
+      width: 70%;
+      height: 30%;
+      z-index: 10;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px black;
+      text-align: center;
+      cursor: help;
+    }
+    #one{
+      display:none;
+    }
+    #two{
+      display:none;
+    }
+    #three{
+      display:none;
+    }
+    #four{
+      display:none;
+    }
+    #five{
+      display:none;
+    }
+    #six{
+      display:none;
+    }
+    #seven{
+      display:none;
+    }
+
+    /* hand */
+    #hand{
+      position: fixed;
+      top: 2vh;
+      left: 1vw;
+      width: 4%;
+      z-index:10;
+      cursor: pointer;
+    }
+    #hand:hover{
+      top: 1.85vh;
+      left: 0.85vw;
+      width: 4.3%;
+      cursor: pointer;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="3kimono.js"></script>
+  </head>
+  <body>
+    <!-- bg -->
+    <img id=pink img src=pink.jpg>
+    <img id=bg1 img src=bg1.jpg>
+    <img id=stars img src=stars.gif>
+    <img id=stars2 img src=stars.gif>
+    <img id=stars3 img src=stars.gif>
+    <img id=stars4 img src=stars.gif>
+    <img id=stars5 img src=stars.gif>
+    <img id=stars6 img src=stars.gif>
+
+    <!-- kimono -->
+    <img id=kimono1 img src=3/kimono.png>
+    <img id=mirrorblank img src=3/mirrorpink1.png>
+    <img id=mirrorblank1 img src=3/mirrorpink1.png>
+    <img id=mirrorfull img src=3/mirror1.png>
+    <img id=kimonobg img src=3/kimonobg.jpg>
+    <!-- <img id=scrollfold img src=3/scrollfold.png>
+    <img id=scrollunfold img src=3/scrollunfold.png> -->
+
+    <div id=kimonologue>
+      <span id=one>我的名字，叫山祺闲人。</span><br><br>
+
+      <span id=two>我曾经有许多个名字。有人叫我“世间最美的男子”。有人叫我“日本的维纳斯”。也有人叫我“空有皮囊的无能之人”。</span><br><br>
+
+      <span id=three>我并不在乎。世人如何评判，又与我何关？在我心中，他们不过是如尘沙一般平庸无味的存在，庸碌地生，庸碌地死。</span><br><br>
+
+      <span id=four>在这世上，唯有美是高尚的品格、永恒的光辉。而我，山祺闲人，正是那美的化身。</span><br><br>
+
+      <span id=five>我远离世俗，隐居深山，正是为了不令那庸脂俗粉沾染了我高洁出世的美丽。也唯有我自己，有资格陪伴在自己身边。</span><br><br>
+
+      <span id=six>这火红的和服，我已在镜中看了千万遍，可每一次这柔滑的布料、细腻的刺绣披覆在我柔美的躯体上，我便又爱自己多一分。就连我自己也常常忍不住感叹造物主的才能，将我这样一个完美无瑕的男人创造出来。</span><br><br>
+
+      <span id=seven>我只愿今生与我自己相伴，直到美貌不再的那一刻，便与自己共赴死亡......</span>
+    </div>
+
+
+    <!-- hand -->
+    <a href=index.html><img id=hand img src=hand.png></a>
+  </body>
+</html>
